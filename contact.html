@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ | 株式会社NextBridge</title>
+  <meta name="description" content="株式会社NextBridgeのお問い合わせ・資料請求・無料デモ体験のお申し込みページです。プロダクトに関するご質問や導入のご相談など、お気軽にお問い合わせください。">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 共通スタイルシート -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       ヘッダー (共通)
+       ========================================================================= -->
+  <header class="site-header" id="mainHeader">
+    <div class="header-container">
+      <a href="index.html" class="site-logo" aria-label="NextBridge トップページ">
+        <div class="logo-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 19V9a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10"></path>
+            <path d="M9 19V11a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v8"></path>
+            <path d="M2 19h20"></path>
+          </svg>
+        </div>
+        <span>NextBridge<span class="logo-sub">SaaS</span></span>
+      </a>
+
+      <nav class="site-nav" aria-label="メインナビゲーション">
+        <ul class="nav-links">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              <span class="nav-en">TOP</span>
+              <span class="nav-ja">トップ</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="services.html" class="nav-link">
+              <span class="nav-en">SERVICES</span>
+              <span class="nav-ja">サービス</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">
+              <span class="nav-en">ABOUT</span>
+              <span class="nav-ja">会社概要</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="careers.html" class="nav-link">
+              <span class="nav-en">CAREERS</span>
+              <span class="nav-ja">採用情報</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-cta-group">
+        <a href="contact.html" class="btn btn-primary btn-sm">
+          <span>お問い合わせ</span>
+          <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+        <button class="hamburger" id="hamburgerBtn" aria-label="メニューを開く" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- モバイルナビ -->
+  <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+  <aside class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">トップ <span>→</span></a>
+      <a href="services.html" class="mobile-nav-link">サービス <span>→</span></a>
+      <a href="about.html" class="mobile-nav-link">会社概要 <span>→</span></a>
+      <a href="careers.html" class="mobile-nav-link">採用情報 <span>→</span></a>
+      <a href="contact.html" class="mobile-nav-link active">お問い合わせ <span>→</span></a>
+    </div>
+    <div class="mobile-nav-footer">
+      <a href="contact.html" class="btn btn-primary" style="width: 100%;">お問い合わせ・資料請求</a>
+    </div>
+  </aside>
+
+  <!-- ページヒーロー -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-inner">
+        <span class="page-hero-tag">Contact Us</span>
+        <h1 class="page-hero-title">お問い合わせ</h1>
+        <p class="page-hero-subtitle">
+          サービスに関するご質問、資料請求、無料デモのご相談、採用への応募など、下記フォームよりお気軽にお問い合わせください。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- パンくずリスト -->
+  <nav class="breadcrumb-nav" aria-label="パンくずリスト">
+    <div class="container">
+      <ol class="breadcrumb-list">
+        <li class="breadcrumb-item"><a href="index.html">トップ</a></li>
+        <li class="breadcrumb-separator">/</li>
+        <li class="breadcrumb-item active" aria-current="page">お問い合わせ</li>
+      </ol>
+    </div>
+  </nav>
+
+  <main class="section section-bg-slate">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- =====================================================================
+             1. お問い合わせフォーム (左側メイン)
+             ===================================================================== -->
+        <div class="contact-card fade-in-up">
+          <form id="contactForm" novalidate>
+            <!-- 会社名 -->
+            <div class="form-group">
+              <label for="company" class="form-label">
+                会社名 <span class="form-required">必須</span>
+              </label>
+              <input type="text" id="company" name="company" class="form-control" placeholder="例）株式会社サンプル" required>
+            </div>
+
+            <!-- お名前 -->
+            <div class="form-group">
+              <label for="name" class="form-label">
+                お名前 <span class="form-required">必須</span>
+              </label>
+              <input type="text" id="name" name="name" class="form-control" placeholder="例）山田 太郎" required>
+            </div>
+
+            <!-- メールアドレス -->
+            <div class="form-group">
+              <label for="email" class="form-label">
+                メールアドレス <span class="form-required">必須</span>
+              </label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="例）yamada@example.co.jp" required>
+            </div>
+
+            <!-- 電話番号 -->
+            <div class="form-group">
+              <label for="phone" class="form-label">
+                電話番号 <span class="form-required">必須</span>
+              </label>
+              <input type="tel" id="phone" name="phone" class="form-control" placeholder="例）03-1234-5678" required>
+            </div>
+
+            <!-- お問い合わせ種別 -->
+            <div class="form-group">
+              <label for="category" class="form-label">
+                お問い合わせ種別 <span class="form-required">必須</span>
+              </label>
+              <select id="category" name="category" class="form-control" required>
+                <option value="" disabled selected>選択してください</option>
+                <option value="demo">プロダクトの無料デモ・トライアル希望</option>
+                <option value="document">サービス資料請求（料金表・詳細資料）</option>
+                <option value="consulting">DX推進・導入検討のご相談</option>
+                <option value="recruit">採用・カジュアル面談へのご応募</option>
+                <option value="partnership">提携・協業・その他のお問い合わせ</option>
+              </select>
+            </div>
+
+            <!-- お問い合わせ内容 -->
+            <div class="form-group">
+              <label for="message" class="form-label">
+                お問い合わせ内容 <span class="form-required">必須</span>
+              </label>
+              <textarea id="message" name="message" class="form-control" placeholder="ご検討中のプロダクトや、現在の課題、ご質問などをご自由にご記入ください。" required></textarea>
+            </div>
+
+            <!-- プライバシーポリシー同意 -->
+            <div class="checkbox-group">
+              <input type="checkbox" id="privacy" name="privacy" required>
+              <label for="privacy">
+                当社の<a href="#" target="_blank" rel="noopener noreferrer">プライバシーポリシー（個人情報保護方針）</a>に同意します。
+              </label>
+            </div>
+
+            <!-- 送信ボタン -->
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+              <span>送信する</span>
+              <svg class="arrow-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </button>
+          </form>
+        </div>
+
+        <!-- =====================================================================
+             2. サイドバー (右側サブ情報)
+             ===================================================================== -->
+        <div class="contact-sidebar fade-in-up delay-200">
+          <!-- お電話でのお問い合わせ -->
+          <div class="contact-info-card">
+            <h4>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              お電話でのお問い合わせ
+            </h4>
+            <p class="contact-info-desc">
+              お急ぎの場合は、下記代表電話より承っております。担当窓口へおつなぎいたします。
+            </p>
+            <div class="contact-direct-link">03-6800-1234</div>
+            <p style="font-size: 0.8rem; color: var(--color-text-muted); margin-top: 4px;">受付時間：平日 9:30〜18:30（土日祝除く）</p>
+          </div>
+
+          <!-- よくあるご質問へのリンク -->
+          <div class="contact-info-card">
+            <h4>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+              よくあるご質問
+            </h4>
+            <p class="contact-info-desc">
+              無料トライアル期間、料金体系、セキュリティ体制など、よくいただく質問をまとめております。
+            </p>
+            <a href="services.html#faq" class="btn btn-outline-navy btn-sm" style="width: 100%;">FAQページを見る</a>
+          </div>
+
+          <!-- 本社所在地 -->
+          <div class="contact-info-card">
+            <h4>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              本社所在地
+            </h4>
+            <p style="font-size: 0.88rem; color: var(--color-text-main); line-height: 1.7;">
+              〒150-0002<br>
+              東京都渋谷区渋谷2丁目24-12<br>
+              渋谷スクエアタワー 18F<br>
+              <a href="about.html#access" style="color: var(--color-accent); font-weight: 700; font-size: 0.85rem;">交通アクセス詳細はこちら →</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- =========================================================================
+       送信完了モーダル (送信成功時にポップアップ表示)
+       ========================================================================= -->
+  <div class="modal-overlay" id="successModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <div class="modal-icon">✓</div>
+      <h3 class="modal-title" id="modalTitle">お問い合わせを受け付けました</h3>
+      <p class="modal-text">
+        お問い合わせいただき、誠にありがとうございます。<br>
+        ご入力いただいたメールアドレス宛に自動確認メールをお送りしました。<br>
+        担当者より、通常1営業日以内にご連絡差し上げます。
+      </p>
+      <button type="button" class="btn btn-primary" id="closeModalBtn" style="width: 100%;">閉じる</button>
+    </div>
+  </div>
+
+  <!-- フッター (共通) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="site-logo">
+            <div class="logo-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 19V9a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10"></path><path d="M9 19V11a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v8"></path><path d="M2 19h20"></path></svg>
+            </div>
+            <span style="color: #FFFFFF;">NextBridge</span>
+          </a>
+          <p class="footer-tagline">
+            テクノロジーで、ビジネスの架け橋をつくる。<br>
+            BtoB SaaSプロダクトの開発と提供を通じて企業の成長を支援します。
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">プロダクト</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#crm">BridgeCRM</a></li>
+            <li><a href="services.html#flow">BridgeFlow</a></li>
+            <li><a href="services.html#analytics">BridgeAnalytics</a></li>
+            <li><a href="services.html#steps">導入の流れ</a></li>
+            <li><a href="services.html#faq">よくある質問</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">企業情報</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">会社概要</a></li>
+            <li><a href="about.html#message">代表メッセージ</a></li>
+            <li><a href="about.html#mvv">ミッション・バリュー</a></li>
+            <li><a href="about.html#history">沿革</a></li>
+            <li><a href="about.html#access">アクセス</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">採用・お問い合わせ</h4>
+          <ul class="footer-links">
+            <li><a href="careers.html">採用情報</a></li>
+            <li><a href="careers.html#jobs">募集職種</a></li>
+            <li><a href="careers.html#interview">社員インタビュー</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+            <li><a href="contact.html">資料請求・デモ</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2019-2026 NextBridge Inc. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="#">プライバシーポリシー</a>
+          <a href="#">情報セキュリティ基本方針</a>
+          <a href="#">利用規約</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

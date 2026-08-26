@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>会社概要 | 株式会社NextBridge</title>
+  <meta name="description" content="株式会社NextBridgeの企業情報、代表メッセージ、ミッション・ビジョン・バリュー、創業からの沿革、アクセスマップをご紹介します。">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 共通スタイルシート -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       ヘッダー (共通)
+       ========================================================================= -->
+  <header class="site-header" id="mainHeader">
+    <div class="header-container">
+      <a href="index.html" class="site-logo" aria-label="NextBridge トップページ">
+        <div class="logo-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 19V9a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10"></path>
+            <path d="M9 19V11a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v8"></path>
+            <path d="M2 19h20"></path>
+          </svg>
+        </div>
+        <span>NextBridge<span class="logo-sub">SaaS</span></span>
+      </a>
+
+      <nav class="site-nav" aria-label="メインナビゲーション">
+        <ul class="nav-links">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              <span class="nav-en">TOP</span>
+              <span class="nav-ja">トップ</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="services.html" class="nav-link">
+              <span class="nav-en">SERVICES</span>
+              <span class="nav-ja">サービス</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link active">
+              <span class="nav-en">ABOUT</span>
+              <span class="nav-ja">会社概要</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="careers.html" class="nav-link">
+              <span class="nav-en">CAREERS</span>
+              <span class="nav-ja">採用情報</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-cta-group">
+        <a href="contact.html" class="btn btn-primary btn-sm">
+          <span>お問い合わせ</span>
+          <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+        <button class="hamburger" id="hamburgerBtn" aria-label="メニューを開く" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- モバイルナビ -->
+  <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+  <aside class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">トップ <span>→</span></a>
+      <a href="services.html" class="mobile-nav-link">サービス <span>→</span></a>
+      <a href="about.html" class="mobile-nav-link active">会社概要 <span>→</span></a>
+      <a href="careers.html" class="mobile-nav-link">採用情報 <span>→</span></a>
+      <a href="contact.html" class="mobile-nav-link">お問い合わせ <span>→</span></a>
+    </div>
+    <div class="mobile-nav-footer">
+      <a href="contact.html" class="btn btn-primary" style="width: 100%;">お問い合わせ・資料請求</a>
+    </div>
+  </aside>
+
+  <!-- ページヒーロー -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-inner">
+        <span class="page-hero-tag">About NextBridge</span>
+        <h1 class="page-hero-title">私たちについて</h1>
+        <p class="page-hero-subtitle">
+          テクノロジーで、ビジネスの架け橋をつくる。<br>
+          NextBridgeのビジョン、会社概要、歩みをご紹介します。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- パンくずリスト -->
+  <nav class="breadcrumb-nav" aria-label="パンくずリスト">
+    <div class="container">
+      <ol class="breadcrumb-list">
+        <li class="breadcrumb-item"><a href="index.html">トップ</a></li>
+        <li class="breadcrumb-separator">/</li>
+        <li class="breadcrumb-item active" aria-current="page">会社概要</li>
+      </ol>
+    </div>
+  </nav>
+
+  <main>
+    <!-- =========================================================================
+         1. 代表メッセージ (CEO Message)
+         ========================================================================= -->
+    <section class="section section-bg-white" id="message">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <span class="section-tag">Top Message</span>
+          <h2 class="section-title">代表メッセージ</h2>
+        </div>
+
+        <div class="ceo-message-card fade-in-up">
+          <div class="ceo-photo-wrap">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=700&q=80" alt="代表取締役CEO 佐藤 航平" loading="lazy">
+          </div>
+          <div class="ceo-content">
+            <h3>「不連続な変化の時代に、すべての企業へ確かな架け橋を。」</h3>
+            <p class="ceo-text">
+              テクノロジーの進化により、ビジネスのあり方は劇的に変化しています。しかし現場では、依然として旧態依然とした業務フローや散在するデータ、部署間の情報の壁に直面し、本来注力すべきコアバリューに集中できないケースが少なくありません。
+            </p>
+            <p class="ceo-text">
+              私たちNextBridgeは、2019年の創業以来「テクノロジーで、ビジネスの架け橋をつくる」というミッションを掲げ、直感的で使いやすく、現場に寄り添うBtoB SaaSの開発に挑戦し続けてきました。
+            </p>
+            <p class="ceo-text">
+              複雑な業務をシンプルに、分断されたデータを価値へと昇華させる。お客様が未来へ力強く踏み出すための強固な「架け橋」となれるよう、社員一同、飽くなき技術探求と価値提供に取り組んでまいります。
+            </p>
+            <div class="ceo-signature">
+              <p>株式会社NextBridge 代表取締役CEO</p>
+              <strong>佐藤 航平 (Kohei Sato)</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- =========================================================================
+             2. ミッション・ビジョン・バリュー (MVV)
+             ========================================================================= -->
+        <div class="section-header fade-in-up" id="mvv" style="margin-top: 60px;">
+          <span class="section-tag">Mission / Vision / Values</span>
+          <h2 class="section-title">理念と行動指針</h2>
+        </div>
+
+        <div class="mvv-grid fade-in-up">
+          <!-- Mission -->
+          <div class="mvv-card">
+            <div class="mvv-label">Mission / 使命</div>
+            <h3 class="mvv-title">テクノロジーで、<br>ビジネスの架け橋をつくる</h3>
+            <p class="mvv-desc">
+              最先端のテクノロジーと徹底したユーザー体験の追求により、人と人、組織と組織、データとアクションをシームレスにつなぎます。
+            </p>
+          </div>
+
+          <!-- Vision -->
+          <div class="mvv-card">
+            <div class="mvv-label">Vision / 目指す姿</div>
+            <h3 class="mvv-title">すべての企業が<br>本質的な価値創造に集中できる社会</h3>
+            <p class="mvv-desc">
+              定型業務や非効率な情報連携から解放され、すべてのビジネスパーソンがクリエイティブで挑戦的な仕事に熱中できる未来を実現します。
+            </p>
+          </div>
+
+          <!-- Values -->
+          <div class="mvv-card">
+            <div class="mvv-label">Values / 行動規範</div>
+            <h3 class="mvv-title">Bridge the Gap / 誠実 / 迅速な挑戦</h3>
+            <p class="mvv-desc">
+              「課題の隙間を埋める」「徹底した誠実さと品質」「失敗を恐れず高速で仮説検証する」という3つの指針を行動の軸とします。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         3. 会社情報テーブル
+         ========================================================================= -->
+    <section class="section section-bg-slate" id="company-info">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <span class="section-tag">Corporate Profile</span>
+          <h2 class="section-title">会社情報</h2>
+        </div>
+
+        <table class="company-table fade-in-up">
+          <tbody>
+            <tr>
+              <th>社名</th>
+              <td>株式会社NextBridge（英語表記: NextBridge Inc.）</td>
+            </tr>
+            <tr>
+              <th>代表者</th>
+              <td>代表取締役CEO 佐藤 航平</td>
+            </tr>
+            <tr>
+              <th>設立</th>
+              <td>2019年4月15日</td>
+            </tr>
+            <tr>
+              <th>資本金</th>
+              <td>1億5,000万円（資本準備金含む）</td>
+            </tr>
+            <tr>
+              <th>社員数</th>
+              <td>45名（2026年8月現在・業務委託含む）</td>
+            </tr>
+            <tr>
+              <th>所在地</th>
+              <td>〒150-0002 東京都渋谷区渋谷2丁目24-12 渋谷スクエアタワー 18F</td>
+            </tr>
+            <tr>
+              <th>事業内容</th>
+              <td>
+                BtoB クラウドサービスの企画・開発・運営<br>
+                ・顧客管理CRM「BridgeCRM」<br>
+                ・業務プロセス管理BPM「BridgeFlow」<br>
+                ・データ分析ダッシュボード「BridgeAnalytics」<br>
+                ・企業向けDX推進コンサルティング
+              </td>
+            </tr>
+            <tr>
+              <th>主要取引銀行</th>
+              <td>三菱UFJ銀行 渋谷支店 / 三井住友銀行 渋谷駅前支店 / みずほ銀行 渋谷中央支店</td>
+            </tr>
+            <tr>
+              <th>取得認証</th>
+              <td>情報セキュリティマネジメントシステム（ISMS）ISO/IEC 27001:2022 認証取得</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- =========================================================================
+             4. 沿革 (5つのマイルストーン)
+             ========================================================================= -->
+        <div class="section-header fade-in-up" id="history" style="margin-top: 80px;">
+          <span class="section-tag">History</span>
+          <h2 class="section-title">沿革</h2>
+          <p class="section-lead">2019年の創業から現在に至るNextBridgeの歩みです。</p>
+        </div>
+
+        <div class="timeline fade-in-up">
+          <!-- 1 -->
+          <div class="timeline-item">
+            <div class="timeline-date">2019.04</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-title">株式会社NextBridgeを東京都渋谷区に設立</div>
+              <div class="timeline-desc">シードラウンドでの資金調達を実施し、BtoB SaaSの開発をスタート。</div>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="timeline-item">
+            <div class="timeline-date">2020.09</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-title">クラウド型顧客管理CRM「BridgeCRM」を正式ローンチ</div>
+              <div class="timeline-desc">中小〜成長ベンチャー企業を中心に導入が進み、初年度で50社に導入。</div>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="timeline-item">
+            <div class="timeline-date">2022.06</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-title">ノーコードBPMツール「BridgeFlow」をリリース</div>
+              <div class="timeline-desc">社内稟議やワークフロー自動化ニーズの高まりを受け、累計導入企業150社を突破。</div>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="timeline-item">
+            <div class="timeline-date">2024.03</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-title">シリーズA総額5億円の資金調達 &「BridgeAnalytics」リリース</div>
+              <div class="timeline-desc">データ分析基盤の提供を開始。ISO27001(ISMS)認証を取得し、エンタープライズ領域へ本格展開。</div>
+            </div>
+          </div>
+
+          <!-- 5 -->
+          <div class="timeline-item">
+            <div class="timeline-date">2026.04</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-title">累計導入企業数300社突破・事業拡大に伴い渋谷新オフィスへ移転</div>
+              <div class="timeline-desc">社員数45名へ拡大。プロダクト間連携を強化し、次世代AI機能の提供を加速。</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- =========================================================================
+             5. アクセスマップ
+             ========================================================================= -->
+        <div class="section-header fade-in-up" id="access" style="margin-top: 80px;">
+          <span class="section-tag">Access</span>
+          <h2 class="section-title">アクセス</h2>
+        </div>
+
+        <div class="map-card fade-in-up">
+          <div class="map-info">
+            <h3 class="map-info-title">本社オフィス</h3>
+            <div class="map-info-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <div>
+                <strong>住所</strong><br>
+                〒150-0002<br>
+                東京都渋谷区渋谷2丁目24-12 渋谷スクエアタワー 18F
+              </div>
+            </div>
+            <div class="map-info-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="16" x="4" y="4" rx="2"></rect><path d="M9 9h6v6H9z"></path></svg>
+              <div>
+                <strong>最寄り駅・交通案内</strong><br>
+                JR山手線・埼京線・湘南新宿ライン「渋谷駅」東口 徒歩3分<br>
+                東京メトロ銀座線・半蔵門線・副都心線「渋谷駅」B3出口直結
+              </div>
+            </div>
+          </div>
+          <div class="map-embed">
+            <!-- Google Maps 渋谷埋め込み -->
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7479754683745!2d139.7016358!3d35.6585805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b563b00109f%3A0x337328def1e2ab26!2z5riL6LC36aeF!5e0!3m2!1sja!2sjp!4v1700000000000!5m2!1sja!2sjp" 
+              title="株式会社NextBridge 所在地マップ"
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-box fade-in-up">
+          <h2 class="cta-title">NextBridgeのサービスを体験しませんか？</h2>
+          <p class="cta-desc">
+            デモ画面のご案内や機能のカスタマイズ相談など、お気軽にお問い合わせください。
+          </p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="btn btn-primary btn-lg">
+              <span>お問い合わせ・ご相談</span>
+              <svg class="arrow-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- フッター (共通) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="site-logo">
+            <div class="logo-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 19V9a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10"></path><path d="M9 19V11a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v8"></path><path d="M2 19h20"></path></svg>
+            </div>
+            <span style="color: #FFFFFF;">NextBridge</span>
+          </a>
+          <p class="footer-tagline">
+            テクノロジーで、ビジネスの架け橋をつくる。<br>
+            BtoB SaaSプロダクトの開発と提供を通じて企業の成長を支援します。
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">プロダクト</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#crm">BridgeCRM</a></li>
+            <li><a href="services.html#flow">BridgeFlow</a></li>
+            <li><a href="services.html#analytics">BridgeAnalytics</a></li>
+            <li><a href="services.html#steps">導入の流れ</a></li>
+            <li><a href="services.html#faq">よくある質問</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">企業情報</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">会社概要</a></li>
+            <li><a href="about.html#message">代表メッセージ</a></li>
+            <li><a href="about.html#mvv">ミッション・バリュー</a></li>
+            <li><a href="about.html#history">沿革</a></li>
+            <li><a href="about.html#access">アクセス</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">採用・お問い合わせ</h4>
+          <ul class="footer-links">
+            <li><a href="careers.html">採用情報</a></li>
+            <li><a href="careers.html#jobs">募集職種</a></li>
+            <li><a href="careers.html#interview">社員インタビュー</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+            <li><a href="contact.html">資料請求・デモ</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2019-2026 NextBridge Inc. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="#">プライバシーポリシー</a>
+          <a href="#">情報セキュリティ基本方針</a>
+          <a href="#">利用規約</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

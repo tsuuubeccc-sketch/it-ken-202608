@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>サービス紹介 | 株式会社NextBridge</title>
+  <meta name="description" content="株式会社NextBridgeが提供する3つのSaaSプロダクト「BridgeCRM」「BridgeFlow」「BridgeAnalytics」の詳細、料金プラン、導入ステップ、よくあるご質問をご紹介します。">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 共通スタイルシート -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       ヘッダー (共通)
+       ========================================================================= -->
+  <header class="site-header" id="mainHeader">
+    <div class="header-container">
+      <a href="index.html" class="site-logo" aria-label="NextBridge トップページ">
+        <div class="logo-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 19V9a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10"></path>
+            <path d="M9 19V11a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v8"></path>
+            <path d="M2 19h20"></path>
+          </svg>
+        </div>
+        <span>NextBridge<span class="logo-sub">SaaS</span></span>
+      </a>
+
+      <nav class="site-nav" aria-label="メインナビゲーション">
+        <ul class="nav-links">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              <span class="nav-en">TOP</span>
+              <span class="nav-ja">トップ</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="services.html" class="nav-link active">
+              <span class="nav-en">SERVICES</span>
+              <span class="nav-ja">サービス</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">
+              <span class="nav-en">ABOUT</span>
+              <span class="nav-ja">会社概要</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="careers.html" class="nav-link">
+              <span class="nav-en">CAREERS</span>
+              <span class="nav-ja">採用情報</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-cta-group">
+        <a href="contact.html" class="btn btn-primary btn-sm">
+          <span>お問い合わせ</span>
+          <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+        <button class="hamburger" id="hamburgerBtn" aria-label="メニューを開く" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- モバイル用ナビゲーション -->
+  <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+  <aside class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">トップ <span>→</span></a>
+      <a href="services.html" class="mobile-nav-link active">サービス <span>→</span></a>
+      <a href="about.html" class="mobile-nav-link">会社概要 <span>→</span></a>
+      <a href="careers.html" class="mobile-nav-link">採用情報 <span>→</span></a>
+      <a href="contact.html" class="mobile-nav-link">お問い合わせ <span>→</span></a>
+    </div>
+    <div class="mobile-nav-footer">
+      <a href="contact.html" class="btn btn-primary" style="width: 100%;">お問い合わせ・資料請求</a>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       ページヒーロー (下層共通)
+       ========================================================================= -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-inner">
+        <span class="page-hero-tag">Services & Solutions</span>
+        <h1 class="page-hero-title">プロダクト・サービス紹介</h1>
+        <p class="page-hero-subtitle">
+          NextBridgeが提供する3つのクラウドサービスで、<br>
+          貴社の業務効率化とデジタルトランスフォーメーションを強力に加速させます。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- パンくずリスト -->
+  <nav class="breadcrumb-nav" aria-label="パンくずリスト">
+    <div class="container">
+      <ol class="breadcrumb-list">
+        <li class="breadcrumb-item"><a href="index.html">トップ</a></li>
+        <li class="breadcrumb-separator">/</li>
+        <li class="breadcrumb-item active" aria-current="page">サービス紹介</li>
+      </ol>
+    </div>
+  </nav>
+
+  <main>
+    <!-- =========================================================================
+         1. 3つのプロダクト詳細セクション
+         ========================================================================= -->
+    <section class="section section-bg-white" id="products">
+      <div class="container">
+        
+        <!-- プロダクト1: BridgeCRM -->
+        <article class="product-detail-block fade-in-up" id="crm">
+          <div class="product-grid">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" alt="BridgeCRMの運用イメージ" loading="lazy">
+            </div>
+            <div class="product-content">
+              <span class="section-tag">CRM / 顧客関係管理</span>
+              <h3>BridgeCRM</h3>
+              <p class="product-tagline">見込み顧客から既存顧客まで、営業活動を全方位で自動化</p>
+              <p class="product-desc">
+                商談の進捗やコミュニケーション履歴、顧客の確度スコアをリアルタイムで一元管理。属人化しがちな営業ノウハウをチーム全体で共有し、成約率とアップセル率を飛躍的に向上させます。
+              </p>
+
+              <!-- 機能一覧 -->
+              <div class="feature-list">
+                <div class="feature-list-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  商談パイプライン自動管理
+                </div>
+                <div class="feature-list-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  名刺・連絡先の自動OCR取込
+                </div>
+                <div class="feature-list-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  AI商談要約＆アクション提案
+                </div>
+                <div class="feature-list-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Slack・Teams・Gmail連携
+                </div>
+              </div>
+
+              <!-- 料金プラン -->
+              <div class="pricing-badge-box">
+                <div class="pricing-badge-title">参考料金プラン</div>
+                <div class="pricing-badge-value">¥4,800〜 <span>/ 1ユーザー・月（税抜）</span></div>
+              </div>
+
+              <a href="contact.html?product=crm" class="btn btn-primary">BridgeCRMの資料請求・デモ依頼</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- プロダクト2: BridgeFlow (レイアウト反転) -->
+        <article class="product-detail-block fade-in-up" id="flow">
+          <div class="product-grid reverse">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="BridgeFlowのワークフロー画面イメージ" loading="lazy">
+            </div>
+            <div class="product-content">
+              <span class="section-tag">BPM / 業務プロセス管理</span>
+              <h3>BridgeFlow</h3>
+              <p class="product-tagline">ノーコードで申請・承認・連携を自動化するワークフロー基盤</p>
+              <p class="product-desc">
+                直感的なドラッグ＆ドロップ操作で、社内のあらゆる稟議・申請フローを瞬時にデジタル化。条件分岐やリマインド通知、他社SaaSとのAPI連携も標準装備。紙の書類や複雑な決裁ルートによる停滞をゼロにします。
+              </p>
+
+              <!-- 機能一覧 -->
+              <div class="feature-list">
+                <div class="feature-list-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  ドラッグ＆ドロップフォーム作成
+                </div>
+                <div class="feature-list-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  スマホワンタップ承認＆印影対応
+                </div>
+                <div class="feature-list-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  高度な条件分岐・多段階承認
+                </div>
+                <div class="feature-list-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  外部REST API / Webhook連携
+                </div>
+              </div>
+
+              <!-- 料金プラン -->
+              <div class="pricing-badge-box">
+                <div class="pricing-badge-title">参考料金プラン</div>
+                <div class="pricing-badge-value">¥3,500〜 <span>/ 1ユーザー・月（税抜）</span></div>
+              </div>
+
+              <a href="contact.html?product=flow" class="btn btn-primary">BridgeFlowの資料請求・デモ依頼</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- プロダクト3: BridgeAnalytics -->
+        <article class="product-detail-block fade-in-up" id="analytics">
+          <div class="product-grid">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=800&q=80" alt="BridgeAnalyticsのデータ分析画面イメージ" loading="lazy">
+            </div>
+            <div class="product-content">
+              <span class="section-tag">Analytics / BIダッシュボード</span>
+              <h3>BridgeAnalytics</h3>
+              <p class="product-tagline">全社データをリアルタイムに可視化し、意思決定スピードを最大化</p>
+              <p class="product-desc">
+                散在するデータベースや基幹システム、各SaaSのデータをノンストップで統合。専門知識不要で美しいグラフやダッシュボードを生成し、経営陣から現場担当者まで迅速なデータ駆動型アクションを可能にします。
+              </p>
+
+              <!-- 機能一覧 -->
+              <div class="feature-list">
+                <div class="feature-list-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  リアルタイムKPIダッシュボード
+                </div>
+                <div class="feature-list-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  自動集計＆レポートPDF/CSV出力
+                </div>
+                <div class="feature-list-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  売上・解約傾向の機械学習予測
+                </div>
+                <div class="feature-list-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  ロールに応じた閲覧権限詳細設定
+                </div>
+              </div>
+
+              <!-- 料金プラン -->
+              <div class="pricing-badge-box">
+                <div class="pricing-badge-title">参考料金プラン</div>
+                <div class="pricing-badge-value">¥50,000〜 <span>/ 組織単位・月（税抜）</span></div>
+              </div>
+
+              <a href="contact.html?product=analytics" class="btn btn-primary">BridgeAnalyticsの資料請求・デモ依頼</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         2. 導入ステップ (4 Steps)
+         ========================================================================= -->
+    <section class="section section-bg-slate" id="steps">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <span class="section-tag">Implementation Flow</span>
+          <h2 class="section-title">スムーズな導入4ステップ</h2>
+          <p class="section-lead">
+            お問い合わせから本番運用まで、専任のカスタマーサクセスが伴走し、最短2週間での立ち上げを実現します。
+          </p>
+        </div>
+
+        <div class="steps-wrapper">
+          <!-- Step 1 -->
+          <div class="step-card fade-in-up delay-100">
+            <div class="step-number">01</div>
+            <h3 class="step-title">ヒアリング・要件定義</h3>
+            <p class="step-desc">
+              現在の業務フローや抱えている課題、目指すゴールをヒアリングし、最適なプロダクト構成をご提案します。
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-card fade-in-up delay-200">
+            <div class="step-number">02</div>
+            <h3 class="step-title">設計・環境構築</h3>
+            <p class="step-desc">
+              貴社の組織体制に合わせた権限設計、既存データ移行、外部ツールとのAPI連携設定を実施します。
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-card fade-in-up delay-300">
+            <div class="step-number">03</div>
+            <h3 class="step-title">トライアル・導入研修</h3>
+            <p class="step-desc">
+              現場メンバー向けの操作レクチャーやマニュアル提供を行い、社内での初期利用定着を図ります。
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="step-card fade-in-up delay-400">
+            <div class="step-number">04</div>
+            <h3 class="step-title">本番稼働・運用サポート</h3>
+            <p class="step-desc">
+              本番運用後も専任担当が定期的な効果測定や追加機能の活用アドバイスを行い、持続的な成果を支援します。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         3. よくある質問 (FAQ アコーディオン: 5問)
+         ========================================================================= -->
+    <section class="section section-bg-white" id="faq">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <span class="section-tag">FAQ</span>
+          <h2 class="section-title">よくあるご質問</h2>
+          <p class="section-lead">導入前の検討時に多く寄せられるご質問と回答をまとめました。</p>
+        </div>
+
+        <div class="faq-wrapper fade-in-up">
+          <!-- Q1 -->
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span><span class="faq-icon-q">Q.</span>無料トライアル期間はありますか？</span>
+              <span class="faq-toggle-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                はい、すべてのプロダクトで「14日間の無料トライアル」をご用意しております。トライアル期間中も本契約と同じ全機能をご利用いただけます。専任スタッフによる初期設定サポートも無償で提供いたします。
+              </div>
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span><span class="faq-icon-q">Q.</span>導入までにどのくらいの期間がかかりますか？</span>
+              <span class="faq-toggle-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                一般的な標準プランの場合、お申し込みから最短2週間〜1ヶ月程度で本番運用を開始できます。既存データの大量移行や高度な外部システム連携を伴う場合は、スケジュールをご相談の上で柔軟に対応いたします。
+              </div>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span><span class="faq-icon-q">Q.</span>自社の既存システムや他社SaaSとの連携は可能ですか？</span>
+              <span class="faq-toggle-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                はい、可能です。RESTful APIおよびWebhookに対応しており、Slack、Chatwork、Teams、Salesforce、kintone、各種会計システムなど、多様な外部クラウドサービスと柔軟に連携可能です。
+              </div>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span><span class="faq-icon-q">Q.</span>セキュリティ体制やバックアップについて教えてください。</span>
+              <span class="faq-toggle-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                NextBridgeでは、国際規格「ISO27001（ISMS）」を取得しており、通信の常時暗号化（SSL/TLS）、国内最高水準のクラウドデータセンター（AWS東京リージョン）での多重バックアップ、2段階認証やIPアドレス制限など、エンタープライズ水準の強固なセキュリティを担保しています。
+              </div>
+            </div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span><span class="faq-icon-q">Q.</span>契約期間や支払方法にはどのような選択肢がありますか？</span>
+              <span class="faq-toggle-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                ご契約は「月額プラン」と割引特典のある「年間一括プラン」からお選びいただけます。お支払い方法は、銀行振込（請求書払い）および各種クレジットカード払いに対応しております。
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. CTAセクション
+         ========================================================================= -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-box fade-in-up">
+          <h2 class="cta-title">まずは14日間の無料トライアルから</h2>
+          <p class="cta-desc">
+            実際の画面を触って操作性をお確かめいただけます。<br>
+            貴社の業務に合わせた最適なプラン構成をご提案いたします。
+          </p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="btn btn-primary btn-lg">
+              <span>無料トライアル・資料請求</span>
+              <svg class="arrow-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       フッター (共通)
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="site-logo">
+            <div class="logo-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 19V9a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10"></path><path d="M9 19V11a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v8"></path><path d="M2 19h20"></path></svg>
+            </div>
+            <span style="color: #FFFFFF;">NextBridge</span>
+          </a>
+          <p class="footer-tagline">
+            テクノロジーで、ビジネスの架け橋をつくる。<br>
+            BtoB SaaSプロダクトの開発と提供を通じて企業の成長を支援します。
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">プロダクト</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#crm">BridgeCRM</a></li>
+            <li><a href="services.html#flow">BridgeFlow</a></li>
+            <li><a href="services.html#analytics">BridgeAnalytics</a></li>
+            <li><a href="services.html#steps">導入の流れ</a></li>
+            <li><a href="services.html#faq">よくある質問</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">企業情報</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">会社概要</a></li>
+            <li><a href="about.html#message">代表メッセージ</a></li>
+            <li><a href="about.html#mvv">ミッション・バリュー</a></li>
+            <li><a href="about.html#history">沿革</a></li>
+            <li><a href="about.html#access">アクセス</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">採用・お問い合わせ</h4>
+          <ul class="footer-links">
+            <li><a href="careers.html">採用情報</a></li>
+            <li><a href="careers.html#jobs">募集職種</a></li>
+            <li><a href="careers.html#interview">社員インタビュー</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+            <li><a href="contact.html">資料請求・デモ</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2019-2026 NextBridge Inc. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="#">プライバシーポリシー</a>
+          <a href="#">情報セキュリティ基本方針</a>
+          <a href="#">利用規約</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
