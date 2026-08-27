@@ -764,7 +764,7 @@ button, input, select, textarea {
   line-height: 1.8;
   color: #E2E8F0;
   margin-bottom: 36px;
-  max-width: 540px;
+  max-width: 640px; /* PC表示時に指定の改行位置まで自然に収まるよう幅を確保 */
 }
 
 .hero-cta-group {
