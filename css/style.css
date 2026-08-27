@@ -149,9 +149,28 @@ button, input, select, textarea {
   white-space: nowrap;
 }
 
+/* レスポンシブ用改行制御ユーティリティ */
+/* PC表示時はスマホ用改行（.sp-br）を無効化し、PC用改行（.pc-br）を有効化 */
+.sp-br {
+  display: none;
+}
+
+.pc-br {
+  display: inline;
+}
+
 @media (max-width: 768px) {
   .text-nowrap {
     white-space: normal; /* モバイルでは自然に折り返す */
+  }
+
+  /* スマホ・タブレット表示時はスマホ用改行を有効化し、PC用改行を無効化 */
+  .sp-br {
+    display: inline;
+  }
+
+  .pc-br {
+    display: none;
   }
 }
 
@@ -1851,8 +1870,20 @@ button, input, select, textarea {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 10%; /* 頭のてっぺんからバストまで綺麗に収まるよう上部10%に調整 */
+  object-position: center top; /* 基本の上部揃えデフォルト */
   transition: transform var(--transition-base);
+}
+
+/* インタビュー1：エンジニア（木下 莉央さん）の写真位置調整（写真を上に上げて胸元・バストアップを綺麗に表示） */
+.interview-photo-engineer img,
+.interview-img-engineer {
+  object-position: center 25%; /* 被写体を少し上に持ち上げ、頭頂部から胸元までをバランスよく表示 */
+}
+
+/* インタビュー2：カスタマーサクセス（田中 瞬さん）の写真位置調整（頭の上から胸元までが美しく収まるように設定） */
+.interview-photo-cs img,
+.interview-img-cs {
+  object-position: center 8%; /* やや上部に基準を置き、頭の上からバストアップまでを自然に配置 */
 }
 
 .interview-card:hover .interview-photo img {
@@ -2326,8 +2357,18 @@ textarea.form-control {
     display: none;
   }
 
+  /* モバイルヘッダー：お問い合わせボタンを非表示にしてハンバーガーを右角に配置 */
+  .header-cta-group .btn {
+    display: none;
+  }
+
+  .header-cta-group {
+    gap: 0;
+  }
+
   .hamburger {
     display: flex;
+    margin-right: -4px; /* 右端（右角）にピッタリ配置 */
   }
 
   .hero-title {
@@ -2336,6 +2377,22 @@ textarea.form-control {
 
   .page-hero-title {
     font-size: 2.1rem;
+  }
+
+  /* CTAセクションのスマホ向け文字サイズ・行間調整 */
+  .cta-box {
+    padding: 40px 20px;
+  }
+
+  .cta-title {
+    font-size: 1.65rem;
+    line-height: 1.35;
+  }
+
+  .cta-desc {
+    font-size: 0.92rem;
+    line-height: 1.7;
+    margin-bottom: 28px;
   }
 
   .grid-2 {
