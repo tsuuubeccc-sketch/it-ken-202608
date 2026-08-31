@@ -2254,6 +2254,7 @@ textarea.form-control {
 
 .footer-bottom-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -2460,6 +2461,18 @@ textarea.form-control {
     flex-direction: column;
     gap: 16px;
     text-align: center;
+  }
+
+  /* フッター最下部のリンク（プライバシーポリシー・利用規約など）をスマホ・タブレットで縦並びに変更 */
+  .footer-bottom-links {
+    flex-direction: column; /* 横並びから縦並び（1列）に変更 */
+    gap: 12px;              /* 各リンクの間隔を上部メニューに合わせて調整 */
+    align-items: center;    /* 中央揃えに配置 */
+  }
+
+  .footer-bottom-links a {
+    display: inline-block;
+    padding: 4px 0;         /* スマホでタップしやすいように上下に余白を設定 */
   }
 
   .contact-card {
